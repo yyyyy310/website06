@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>美食天堂</title>
+<style type="text/css">
+.container {
+	width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#container {
+	width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#header {
+	height: 150px;
+	width: 1280px;
+}
+#header {
+	height: 150px;
+	width: 1280px;
+}
+#article {
+	float: left;
+	height: 600px;
+	width: 1000px;
+}
+#article {
+	float: left;
+	height: 600px;
+	width: 1000px;
+	overflow: auto;
+}
+#item {
+	float: right;
+	height: 600px;
+	width: 280px;
+}
+#footer {
+	float: left;
+	height: 50px;
+	width: 1280px;
+}
+.titlestyie {
+	font-family: "微軟正黑體";
+	font-size: 24px;
+	color: #00F;
+}
+.titlestyle {
+	font-family: "微軟正黑體";
+	font-size: 24px;
+	color: #069;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="container">
+  <div id="header"><img src="images/333.jpg" width="1280" height="150" /></div>
+  <div id="article">
+    <form id="form1" name="form1" method="post" action="">
+      <p>姓名:
+        <label for="textfield"></label>
+        <span id="sprytextfield1">
+        <label for="text1"></label>
+        <input type="text" name="text1" id="text1" />
+      <span class="textfieldRequiredMsg">需要有一個值。</span></span>      </p>
+      <p>性別:
+        <input name="radio" type="radio" id="radio" value="radio" checked="checked" />
+        <label for="radio">男</label>
+        <input type="radio" name="radio" id="radio" value="radio" />
+        <label for="radio">女</label>
+      </p>
+      <p>職業:
+        <label for="select"></label>
+        <select name="select" id="select">
+          <option>學生</option>
+          <option>軍公教</option>
+          <option>商業</option>
+          <option>工業</option>
+          <option>自由頁</option>
+        </select>
+      </p>
+      <p>回復時間(可複選)
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <label for="checkbox"></label>
+      早上
+      <input type="checkbox" name="checkbox2" id="checkbox2" />
+      <label for="checkbox2">中午</label>
+      <input type="checkbox" name="checkbox3" id="checkbox3" />
+      <label for="checkbox3">晚上</label>
+      </p>
+      <p>電子郵件<span id="sprytextfield2">
+      <label for="text2"></label>
+      <input type="text" name="text2" id="text2" />
+      <span class="textfieldRequiredMsg">需要有一個值。</span><span class="textfieldInvalidFormatMsg">格式無效。</span></span></p>
+      <p>填寫日期: <label for="dt"></label>
+      <input type="date" name="dt" id="dt" />
+      <p>詢問內容:
+        <label for="textarea"></label>
+      <textarea name="textarea" id="textarea" cols="45" rows="6"></textarea>
+      <p>
+      <input type="submit" name="button" id="button" value="送出" />
+      <input type="submit" name="button2" id="button2" value="重設" />                  
+</form>
+<iframe src="test.html"width="900"height="400" frameborder="0" scrolling="no"></iframe>
+   </div>
+  <div id="item">
+    <ul id="MenuBar1" class="MenuBarVertical">
+      <li><a href="food.html">美食天堂</a>      </li>
+      <li><a href="home.html">嘉的味道</a></li>
+      <li><a href="place.html">特色景點</a>      </li>
+      <li><a href="me.html">關於我</a></li>
+      <li><a href="for me.html">與我聯絡</a></li>
+      <li><a href="index.html">回首頁</a></li>
+    </ul>
+  </div>
+  <div id="footer"><img src="images/頁尾.jpg" width="1281" height="50" /></div>
+</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+</script>
+</body>
+</html>
